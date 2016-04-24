@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>Doar Stiinta</title>
+	<link href = "Css.css" type = "text/css" rel = "stylesheet"/>
+	<script src="javascript.js" type="text/javascript"> </script>
+	<script type="text/javascript"  src="jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="myjquery.js"> </script>
+</head>
+
+<body>
+	<figure class="backgr"> <img src = "ScienceBanner.jpg" alt = "Foto banner stiinta" id = "poz_back"/>
+	
+	<form id = "id">
+	<ul id = "ul">
+			<li> Username : <input type="text" required id = "user"> </li>
+			<li> Password : <input type="password" maxLength = "12" required id = "pass"> </li>
+			<li> <input type="button" value="Log in" id = "b"> </li>
+	</ul>
+	</form>
+	
+	</figure>
+	
+	
+	<nav>
+		<ul id = "menu">
+			<li class = "li_special"><a href = "index.html"><img src = "home.jpg" alt = "Home" id = "home"/></a></li>
+			<li><a > Istoria stiintei </a>
+				<ul>
+					<li><a href = "Stiintamaine.html" > Stiinta de maine </a></li>
+					<li><a href = "Stiintaieri.html" > Stiinta de ieri </a>
+						<ul>
+							<li> <a href = "Stiintaieri.html#1300"> Perioada 1300-1400 </a> </li>
+							<li> <a href = "Stiintaieri.html#1400"> Perioada 1400-1500 </a> </li>
+							<li> <a href = "Stiintaieri.html#1500"> Perioada 1500-1600 </a> </li>
+						</ul>
+					</li>
+				</ul></li>
+			<li><a href = "Marigenii.html"> Mari genii </a></li>
+			<li><a href = "Concurs.html"> Concurs </a>
+		</ul>
+	</nav>
+	
+	<h4> Castigatori Concursul <span> Isaac vs Newton </span> : </h4>
+	
+	<table id="tabel">
+  <tr>
+    <th>Loc</th>
+    <th>Nume</th>	
+	<th>Premiu</th>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td>Popescu Ion</td>	
+	<td>Laptop Acer i7</td>
+  </tr>
+  <tr>
+    <td>II</td>
+    <td>Dumitrescu Pavel</td>
+    <td>Tableta Samsung Galaxy Tab2</td>		
+  </tr>
+  <tr>
+    <td>III</td>
+    <td>Manea Claudia</td>
+    <td>Telefon Samsung S3</td>		
+  </tr>
+    <tr>
+    <td>IV</td>
+    <td>Serghei Bogdan</td>
+    <td>Atlas "Istoria Matematicii"</td>		
+  </tr>
+    <tr>
+    <td>V</td>
+    <td>Pirvan Daniel</td>
+    <td>Carte "Tesla : Portret intre masti"</td>		
+  </tr>
+	</table>
+	
+	<h4> Concurs Nou <span> Rezolva ecuatia poetica</span> ! </h4>
+	
+	<div id = "concurs">
+ 	<p>	Einstein este 4 iar !Einstein este 4 .<br/>
+		Newton este 2 iar !Newton este 4 . <br/>
+		Galilei fara i e intre ei . <br/>
+		!Galilei de aflat este usor <br/>
+		3 ar zice toti in cor <br/>
+	</p>
+	<p> Vine Darwin si se-ntreaba<br/>
+		Daca problema va evolua <br/>
+		Eu ii zic ca DA ! <br/>
+		Calculeaza tu acum  <br/>
+		Este Darwin <span>bun</span> , <span> nebun </span> ? <br/>
+	</p>
+	</div>
+	
+	<div>
+	<h5> Trimite raspunsul tau completand formularul de mai jos impreuna cu premiul pe care doresti sa il castigi. Vor fii 20 castigatori, alesi
+	prin tragere la sorti. </h5>
+	
+	<form id = "forma">
+		<fieldset>
+		<legend>Concurs</legend>
+		Nume:<br>
+		<input type="text" name="nume" value="" required><br>
+		Prenume:<br>
+		<input type="text" name="prenume" value="" required><br>
+		Adresa email: <br>
+		<input type="email" name="adresa" value="" required><br>
+		Data nasterii: <br>
+		<input type="date" name="data_nasterii"> <br>
+		Raspuns : <br>
+		<input type="text" name="raspuns" value="" required><br><br>
+		<input type="radio" name="premiu" value="Figurina Einstein">Figurina Einstein <br>
+		<input type="radio" name="premiu" value="Figurina Newton" checked>Figurina Newton<br><br>
+		<input type="submit" value="Submit" id = "raspunde">
+		</fieldset>
+	</form>
+	</div>
+	
+	<form id = "form_tabel">
+		<fieldset>
+		<legend>Adauga castigatori</legend>
+		Loc:<br>
+		<input type="text" name="loc" value="" required id = "loc"><br>
+		Nume:<br>
+		<input type="text" name="nume" value="" required id = "nume"><br>
+		Prenume:<br>
+		<input type="text" name="prenume" value="" required id = "prenume"><br>
+		Premiu:<br>
+		<input type="text" name="premiu" value="" required id = "premiu"><br>
+		<input type="button" value="Adauga castigator" id = "adauga">
+		</fieldset>
+	</form>
+	
+	<div>
+	
+	<img src = "einstein.jpg" width = "30px" height = "40px" alt = "Einstein"  id = "pozaein" position = "relative" />
+	
+	</div>
+	
+</body>
+</html>
+
+	
+	

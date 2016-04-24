@@ -1,0 +1,26 @@
+[	
+	{"src":"arhimede.jpeg", "alt":"Arhimede", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "1"},
+	{"src":"galileo.jpg", "alt":"Galileo Galilei", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "1"},
+	{"src":"newton.jpg", "alt":"Isaac Newton", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "1"},
+	{"src":"tesla.jpg", "alt":"Nikola Tesla", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "1"},
+	{"src":"einstein.jpg", "alt":"Albert Einstein", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "1"},
+	{"src":"hawking.jpg", "alt":"Stephen Hawking", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "1"},
+	{"src":"pitagora.jpg", "alt":"Pitagora", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"euclid.jpg", "alt":"Euclid", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"leibniz.jpg", "alt":"Leibniz", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"pascal.jpg", "alt":"Pascal", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"gauss.jpg", "alt":"Carl Friedrich Gauss", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"Laplace.jpg", "alt":"Laplace", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"lagrange.jpg", "alt":"Luis Lagrange", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"fermat.jpg", "alt":"Pierre Fermat", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "2"},
+	{"src":"pasteur.jpg", "alt":"Pasteur", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "3"},
+	{"src":"curie.jpg", "alt":"Marie Curie", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "3"},
+	{"src":"francois.jpg", "alt":"Jacob Francois", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "3"},
+	{"src":"davinci.jpg", "alt":"Leonardo Da Vinci", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "3"},
+	{"src":"darwin.jpg", "alt":"Charles Darwin", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "3"},
+	{"src":"turing.jpg", "alt":"Alan Turing", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "4"},
+	{"src":"babage.jpg", "alt":"Babage", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "4"},
+	{"src":"mccarthy.png", "alt":"John McCarthy", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "4"},
+	{"src":"mccarthy.png", "alt":"John McCarthy", "link" : "http://ro.wikipedia.org/wiki/Arhimede", "dom" : "4"}
+			
+] 

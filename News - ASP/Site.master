@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <asp:PlaceHolder runat="server">      
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+  
+</head>
+
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <%--Framework scripts--%>
+            <asp:ScriptReference Name="MsAjaxBundle" />
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+            
+            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            <asp:ScriptReference Path="~/Scripts/jquery.min.js" />
+            <asp:ScriptReference Name="WebFormsBundle" />
+            <%--Site scripts--%>
+
+        </Scripts>
+    </asp:ScriptManager>
+
+            <asp:SqlDataSource ID="SqlDataSource3" runat="server" SelectCommand ="Select * from Category" ConnectionString="<%$ ConnectionStrings:BazaDeStiriConnectionString %>">
+        
+    </asp:SqlDataSource>
+
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <img  src="logo.png"/></p>
+            </div>
+            <div class="float-right">
+                <section id="login">
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul>
+                                <li><a id="registerLink" runat="server" href="~/Register.aspx">Register</a></li>
+                                <li><a id="loginLink" runat="server" href="~/Login.aspx">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <p>
+                                Hello, <a runat="server" class="username" href="~/Account/Manage.aspx" title="Manage your account">
+                                    <asp:LoginName runat="server" CssClass="username" />
+                                </a>!
+                                <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" />
+                            </p>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </section>
+                   </div>
+           </div>
+       
+        <div class="content-wrapper">
+                <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="Default.aspx">Home</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li >
+							<a href="Account.aspx">Account</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+                               
+                                <li>
+                            <asp:ListBox AutoPostBack="true" OnSelectedIndexChanged="Search_Click" ID="ListBox1" runat="server" style=" border-style:none;
+    background-color:azure;
+    border-width:0px;
+    border: none;
+    font-size:12pt;
+    font-weight:bold;
+    font-family:Verdana;
+    OVERFLOW:auto; 
+    " DataSourceID="SqlDataSource3" DataValueField="Id" DataTextField="Name" CssClass="myListBox" >
+                             
+                            </asp:ListBox>
+                                </li>
+                           <li>   
+                               </li>
+							</ul>
+						</li>
+					</ul>
+					<div class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<asp:TextBox type="text" Cssclass="form-control" runat="server" ID="search_input"/>
+						</div> 
+						<button class="btn btn-default" runat="server" ID="search_button" onserverclick="Button_search_click">
+							Search
+						</button>
+					</div>
+					
+				</div>
+				
+			</nav>
+		</div>
+	</div>
+</div>
+            </div>
+           
+          
+    </header>
+
+
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix" style="">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p > 
+                   <%: DateTime.Now.Year %> - Alex Suciu News
+                </p>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>

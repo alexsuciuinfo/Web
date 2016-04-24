@@ -1,0 +1,504 @@
+.backgr {
+
+	margin-bottom: 0em;
+	margin-top: 0em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.buton{
+	
+	background-color : white;
+	color: black;
+	width : 40px;
+	height: 30px;
+	border : 5px;
+	border-radius: 10px;
+	margin-left : 10px;
+	
+}
+
+#box {
+	background: grey;
+	height: 10%;
+	width: 80%;
+	position: absolute;
+	margin-top: 50px;
+	color:black;
+	text-align:center;
+	margin-left:30px;
+}
+
+
+body{
+	background-color: #AFEEEE
+}
+
+#menu {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: auto;
+	font-family: Tahoma;
+	font-size: 35px;
+}
+
+#menu ul, #menu li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li{
+	display: block;
+	text-align: center;
+	background-color: #333333;
+}
+
+#menu > li:hover > ul {
+	visibility: visible;
+	background-color: #0000CD;
+	color : #008000;
+	display: block;
+}
+
+
+#menu li:hover{
+	background-color: #4B0082;
+	color: #A9A9A9;
+}
+
+#menu  li > ul {
+	visibility: hidden;
+	display: none;
+	position: absolute;
+	z-index: 600;
+}
+
+#menu li > ul > li:hover ul {
+	visibility: visible;
+	background-color: #0000CD;
+	color : #008000;
+	display: block;
+	font-size: 0.8em;
+}
+
+
+#menu a {
+	color: #CBCBCB;
+	text-decoration: none;
+}
+
+#menu > li{
+	float: left;
+	width: 30%;
+}
+
+#menu  .li_special{
+	width: 2.5em;
+}
+
+#menu a:hover{
+	color: #228B22;
+}
+
+#id
+{
+	font-family: Tahoma;
+	text-align: center;
+	font-size: 115%;
+	display: inline-block;
+}
+
+#id1{
+	font-family: Arial;
+	color: red;
+	font-size : 130%;
+	display: inline-block;
+}
+
+#logout{
+	
+	font-size : 130%;
+	display: inline-block;
+	margin-left : 10px;
+
+}
+
+#id li{
+	list-style: none;
+}
+
+#left{
+	float: left;
+}
+
+#right{
+	float: right;
+}
+
+.banner, .banner1{
+	margin-left: 0em;
+	color: #708090;
+	background-color: #B0C4DE;
+}
+
+.banner{
+	width: 40%;
+	height: 15%;
+	margin-top: 3em;
+}
+
+.banner1{
+	margin-top: 1.7em;
+}
+
+.articol{
+	background-color: white;
+	height: 34%;
+	width: 39%;
+	padding: 1em;
+	margin-top: 2em;
+	font-weight: bold;
+	color: black;
+}
+
+.articol1{
+	margin-top: 2em;
+	padding: 1em;
+	font-weight: bold;
+	color: black;
+}
+
+
+.title{
+	text-align: center;
+	font-family: Tahoma;
+	text-indent: 0em;
+	color: #000000;
+}
+
+.poza{
+	width: 25%;
+	height: 35%;
+	float: left;
+	margin-right: 0em;
+	margin-bottom: 0em;
+}
+
+.poza_anunt{
+	width: 30%;
+	height: 40%;
+	float: right;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.title_anunt{
+	text-align: center;
+	font-family: Arial;
+	text-indent: 0em;
+	color: black;
+}
+
+#citat{
+ font-style: italic;
+ color: #CC0000;
+}
+
+span{
+	font-style: italic;
+	text-decoration: bold;
+	color: black;
+}
+
+#right{
+	float: right;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-top: 0em;
+	width: 45%;
+}
+
+.articol_grad , .articol_grad1, .istorie_grad_istorie, .istoriem_grad_istorie{
+	background: -webkit-linear-gradient(right,rgba(0,0,255,0),rgba(0,0,255,0));
+	background: -o-linear-gradient(right,rgba(0,0,255,0),rgba(0,0,255,0));
+	background: -moz-linear-gradient(right,rgba(0,0,255,0),rgba(0,0,255,0)); 
+}
+
+.articol_grad{
+	background: linear-gradient(to right, rgba(0,100,255,1), rgba(0,0,120,0));
+	height: 34%;
+	width: 39%;
+	padding: 1em;
+	margin-top: 2em;
+	font-weight: bold;
+	color: black;
+}
+
+.articol_grad1{
+	background: linear-gradient(to left, rgba(-6,-1,9,1), rgba(0,0,120,0));	
+	margin-top: 2em;
+	padding: 1em;
+	font-weight: bold;
+	color: black;
+}
+
+.istorie_grad_istorie, .istoriem_grad_istorie{
+	background: linear-gradient(to right, rgba(115,115,115,1), rgba(0,0,120,0));
+}
+
+h2{
+	background-color: #FFFF99;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	width: 35em;
+	color: red;
+	font-size: 2em;
+}
+
+.title_istorie{
+	text-align: left;
+	font-family: Tahoma;
+	text-indent: 0em;
+	color: #0000FF;
+	font-size: 1.2em;
+}
+
+.istorie_grad_istorie,.istoriem_grad_istorie{
+	color: black;
+	font-family: Arial;
+	font-style: normal;
+	padding: 0.2em;
+	margin-left: 1em;
+}
+
+.istorie_grad_istorie{
+	margin-top: 2em;
+	width: 85%;
+}
+
+.istoriem_grad_istorie{
+	margin-top: 5.7em;
+	width: 65%;
+}
+
+.poza_istorie{
+	
+	display: block;
+	margin-left: auto;
+	margin-right: 0.5em;
+	margin-top: 3em;
+}
+
+#galerie{
+	 margin-left :auto;
+     margin-right:auto;
+     margin-top:100px;
+     width:1200px;
+}
+
+figcaption, h3, section {
+	text-align:center;
+}
+
+h3{
+	text-shadow: 2px 2px 2px red;
+	font-size: 2em;
+}
+
+.poz_gal {
+	margin:10px;  
+	display: inline-block;
+}
+
+
+.poz_gal1{
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+	width: 280px;
+	height: 380px;
+}
+
+#pozacastig{
+
+	width: 200px;
+	height: 350px;
+	
+}
+
+.poz_gal1:hover{
+	width: 450px;
+	height: 550px;
+	transform: rotate(5deg);
+}
+
+th {
+    text-align: center;
+}
+tr{
+	text-align: center;
+}
+
+#tabel tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#tabel tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+#tabel th	{
+    background-color: blue;
+    color: white;
+}
+
+table {
+	
+	margin-left: 2em;
+	margin-top: 2em;
+    width:70%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+h4,h5{
+	margin-left: 2em;
+	font-family: Tahoma;
+	font-size: 1.5em;
+	margin-top: 4em;
+}
+
+h5{
+	font-size: 1em;
+}
+
+h4{
+	font-size: 1.5em;
+}
+
+#concurs {
+	font-size: 1em;
+	color: blue;
+	margin-left: 2em;
+	text-indent: 2em;
+	width: 55%;
+	text-align: center;
+}
+
+.formular{
+	margin-left: 2em;
+}
+
+#poz_back{
+	width: 800px;
+	height: 100px;
+}
+
+#home{
+	width: 80px;
+	height: 30px;
+}
+
+
+@media all and (max-width: 1000px){
+
+
+#menu {
+	font-size: 20px;
+}
+
+h2{
+	width: 35%;
+	font-size: 1.5em;
+}
+
+
+.poz_gal1{
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+	width: 125px;
+	height: 150px;
+}
+
+.poz_gal1:hover{
+	width: 150px;
+	height: 170px;
+	transform: rotate(5deg);
+}
+
+#galerie{
+	 margin-left :auto;
+     margin-right:auto;
+     margin-top:100px;
+     width: 90%;
+}
+
+#home{
+	width: 40%;
+	height: 50%;
+}
+
+#poz_back{
+	width: 40%;
+	height: 1%;
+}
+
+#id{
+	font-size: 12px;
+}
+
+#id li{
+	list-style: none;
+	width: 40%;
+}
+
+.poza_istorie{
+	
+	display: none;
+}
+
+.articol_grad, .articol_grad1, .banner, .banner1{
+	font-size: 13px;
+}
+
+}
+
+@media all and (max-width: 800px){
+		
+#menu {
+	font-size: 15px;
+}
+
+.articol_grad, .articol_grad1, .banner, .banner1{
+	font-size: 11px;
+}
+
+}
+
+
+@media all and (max-width: 500px){
+	
+#menu {
+	font-size: 10px;
+}
+
+.articol_grad, .articol_grad1, .banner, .banner1{
+	font-size: 8px;
+}
+
+}
+
+
+
